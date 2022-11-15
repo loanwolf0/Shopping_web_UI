@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-containerD{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgD{
+    margin: 20px;
+    width: 300px;
+    height: 350px;
+}
+
+.img-containerD{
+    display: flex;
+    justify-content:start ;
+    align-items: flex-start;
+}
+
+.details-containerD{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+#titleD{
+    font-size: 30px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .5px;
+    color: darkgreen;
+}
+
+#priceD{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+#descriptionD{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    font-weight: 500;
+    color: darkgreen;
+}
+
+#ratingD{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#rating-countD{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:lighter;
+}
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: limegreen;
+    text-decoration: none;
+    opacity: .8;
+}
+.cart-container:hover{
+    opacity: 1;
+    box-shadow: 2px 2px 4px rgba(0,100,0,0.4);
+}
+.aadToCart{
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+    border: .1px limegreen none;
+    border-radius: 50% 0px;
+    text-shadow: 2px 2px 4px rgba(0, 100, 0, 0.5);
+    color: red;
+}
+
+@media screen and (min-width: 950px) {
+    .main-containerD{
+        width: 100%;
+        padding: 20px ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .imgD{
+        margin: 20px;
+        width: 400px;
+        height: 500px;
+    }
+    .details-containerD{
+        margin-left: 100px;
+    }
+    #titleD{
+        font-size: 35px;
+    }
+    #priceD{
+        font-size: 28px;
+    }
+    #ratingD{
+        font-size: 20px;
+    }
+    #rating-countD{
+        font-size: 20px;
+    }
+    .cart-container{
+        margin-top: 50px;
+    }
+  }

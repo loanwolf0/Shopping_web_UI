@@ -1,0 +1,248 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+
+}
+
+.all-container{
+    height: 80vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.cartItem{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1pc 1pc 1pc rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+.imgC-container{
+    
+    padding: 15px ;
+}
+.imgC{
+    width: 100px;
+    height: 100px;
+    margin-right: 150px;
+
+}
+#priceC{
+    color: darkgreen;
+    
+}
+
+.btn-container{
+    padding: 10px;
+    border: none;
+
+}
+.btnC{
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.detailsC{
+    display: inline;
+    margin: 10px;
+}
+
+
+.total-amountC{
+    height: 100%;
+    display: flex;
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    
+}
+
+.total-amount{
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 255, 0, 0.2);
+}
+#total-amount{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+} */
+
+.all-container{
+    height:80vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.all-container main{
+    padding: 20px;
+    overflow-y: auto;
+
+}
+.all-container main ::-webkit-scrollbar{
+    display: none;
+}
+.all-container main h1{
+    color: red;
+    font: 100 20px "Roboto";
+}
+
+.all-container article{
+    margin-left: 80px;
+}
+
+.all-container aside{
+    border-radius: 20px 0 0 20px ;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.all-container aside h4,h3 {
+    margin: 20px;
+    font: 100 20px "Roboto", "Helvetica Neue", Helvetica, Arial;
+
+}
+.all-container aside h3{
+    font-weight: 600;
+}
+
+.cartItem{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.111);
+
+
+}
+.cartItem img{
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    object-fit: contain;
+
+}
+
+.cartItem div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.cartItem div button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.cartItem div button:hover{
+    color: greenyellow;
+
+}
+.cartItem div p {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+}
+.cartItem svg{
+    cursor: pointer;
+    font-size: 30px;
+    display: inline-block;
+    margin: auto;
+}
+.cartItem svg:hover{
+    color: red;
+}
+
+@media  screen and (max-width: 950px){
+    .all-container{
+        height:80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .all-container main{
+        padding: 5px;
+        overflow-y: auto;
+    
+    }
+    
+    .all-container aside{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        height: 100%;
+        width: 100%;
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .all-container aside h4,h3 {
+        margin: 10px;
+        font: 20px "Roboto", "Helvetica Neue", Helvetica, Arial;
+    
+    }
+   
+
+    .cartItem div button{
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        display: inline-block;
+        place-items: center;
+        
+    }
+    .cartItem img{
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        object-fit: contain;
+    
+    }
+    
+    .cartItem div button:hover{
+        color: greenyellow;
+    
+    }
+    .cartItem div p {
+        width: 20px;
+        height: 20px;
+        
+    }
+    .cartItem svg{
+        font-size: 20px;
+        
+    }
+
+    
+}

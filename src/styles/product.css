@@ -1,0 +1,124 @@
+.card{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+.card:hover{
+  box-shadow: 2px 4px 2pc rgba(0, 0, 0, 0.9);
+  
+}
+
+.details{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details:hover{
+  cursor: pointer;
+
+}
+
+.Nav {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .searchForm {
+    width: 80%;
+    padding: 1rem 0 0 0.75rem;
+  }
+  
+  .searchForm input[type="text"] {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    min-height: 48px;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    outline: none;
+  }
+  
+  .searchForm label {
+    position: absolute;
+    left: -99999px;
+  }
+  
+  .Nav ul {
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .Nav li {
+    padding: 1rem;
+  }
+  
+  .Nav li:hover, 
+  .Nav li:focus {
+    padding: 1rem;
+  }
+
+  .img{
+    width: 200px;
+    height: 200px;
+  }
+  .priceP-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .priceP{
+    
+    font-weight: bold;
+    margin: 0px 30px 0px 0;
+  }
+
+  .cart-containerP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: limegreen;
+    text-decoration: none;
+    opacity: .8;
+}
+.cart-containerP:hover{
+    opacity: 1;
+    box-shadow: 2px 2px 4px rgba(0,100,0,0.4);
+}
+.aadToCartP{
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  background-color: limegreen;
+  border: none;
+  opacity: 1;
+  border-radius: 15%;
+  text-shadow: 2px 2px 4px rgba(0, 100, 0, 0.5);
+  color: red;
+  margin-top: 10px;
+
+}
+.aadToCartP:hover{
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.add-p-r-container{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
